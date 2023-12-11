@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- HOME E MENU PRINCIPAL STUFF-->
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="Pagina Principal"/>
+
+        <item android:id="@+id/nav_oportunities"
+            android:icon="@drawable/oportunities"
+            android:title="Oportunidades"/>
+
+        <item android:id="@+id/nav_ideas"
+            android:icon="@drawable/ideas"
+            android:title="Ideias"/>
+
+        <item android:id="@+id/nav_job_offers"
+            android:icon="@drawable/job_offers"
+            android:title="Ofertas/Vagas"/>
+
+        <item android:id="@+id/nav_benefits"
+            android:icon="@drawable/benefits"
+            android:title="Beneficios"/>
+
+    </group>
+    <!-- FUNCIONALIDADES-->
+    <item android:title="Outras Opções">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item android:id="@+id/nav_calendario"
+                    android:icon="@drawable/baseline_calendar_month_24"
+                    android:title="Calendário"/>
+
+                <item android:id="@+id/nav_list_users"
+                    android:icon="@drawable/profile"
+                    android:title="List Users"/>
+
+                <item android:id="@+id/reporting"
+                    android:icon="@drawable/baseline_bar_chart_24"
+                    android:title="Reporting"/>
+
+                <item android:id="@+id/nav_profile"
+                    android:icon="@drawable/profile"
+                    android:title="Profile"/>
+
+
+
+                <item android:id="@+id/nav_logout"
+                    android:icon="@drawable/baseline_logout_24"
+                    android:title="Terminar Sessão"/>
+
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>

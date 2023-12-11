@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPage"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="411dp"
+            android:layout_height="341dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/menu_btn"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerInside"
+                android:contentDescription="@string/menu"
+                android:src="@drawable/baseline_menu_24"
+                android:background="@android:color/transparent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="90dp"
+                app:cardCornerRadius="100dp"
+                app:cardElevation="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                android:id="@+id/user_perf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="205dp"
+                android:layout_marginBottom="50dp"
+                android:text="Utilizador:"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.317" />
+            <TextView
+                android:id="@+id/perfil_Nome_Utilizador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="275dp"
+                android:layout_marginBottom="50dp"
+                android:text="Primeiro Nome"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.317" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="421dp"
+            android:layout_height="403dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+                <EditText
+                    android:id="@+id/perfil_PrimeiroNome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginBottom="8dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:foreground="@drawable/border_black"
+                    android:inputType="text"
+                    android:padding="20dp"
+                    android:text="Primeiro Nome"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/perfil_UltimoNome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginVertical="8dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:foreground="@drawable/border_black"
+                    android:inputType="text"
+                    android:padding="20dp"
+                    android:text="Último Nome"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/perfil_Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginVertical="8dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:foreground="@drawable/border_black"
+                    android:inputType="textEmailAddress"
+                    android:padding="20dp"
+                    android:text="Email"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/perfil_Telefone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginVertical="8dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:foreground="@drawable/border_black"
+                    android:inputType="phone"
+                    android:padding="20dp"
+                    android:text="Telefone"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/perfil_Local"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginVertical="8dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:foreground="@drawable/border_black"
+                    android:inputType="text"
+                    android:padding="20dp"
+                    android:text="Morada"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/perfil_Cargo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginVertical="8dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:foreground="@drawable/border_black"
+                    android:inputType="text"
+                    android:padding="20dp"
+                    android:text="Cargo Atual"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/bt_perfil_Editar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:text="Editar Perfil"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <Button
+                    android:id="@+id/bt_perfil_Guardar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:text="Gravar Alterações"
+                    android:textSize="16dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <Button
+                    android:id="@+id/bt_perfil_Eliminar"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:text="Eliminar Conta"
+                    android:textSize="16dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/main_menu"
+        app:headerLayout="@layout/header"
+        android:fitsSystemWindows="true"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

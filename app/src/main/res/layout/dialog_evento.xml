@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Título" />
+
+    <EditText
+        android:id="@+id/editTextDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descrição"
+        android:minLines="3"/>
+
+    <Spinner
+        android:id="@+id/spinnerTipoEvento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown" />
+    <TextView
+        android:id="@+id/textViewInicial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escolha a data de inicial" />
+
+    <TextView
+        android:id="@+id/textViewFinal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:textAlignment="center"/>
+
+
+    <Button
+        android:id="@+id/btDateTime2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escolha a data de final" />
+
+    <Button
+        android:id="@+id/btParticipantes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Escolha os participantes" />
+
+
+    <!-- Add other UI elements such as pickers, etc., if needed -->
+
+</LinearLayout>

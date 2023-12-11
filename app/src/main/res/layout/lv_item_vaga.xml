@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/teste_walpaper">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="379dp"
+        android:layout_height="117dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/transparent"
+        android:foreground="@drawable/border_black"
+        android:padding="1dp"
+        app:cardBackgroundColor="#F2F2F2"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="131dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="2dp"
+                    android:text="Posição:"
+                    android:textAlignment="viewEnd"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="2dp"
+                    android:text="Localização:"
+                    android:textAlignment="viewEnd"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="2dp"
+                    android:text="Área:"
+                    android:textAlignment="viewEnd"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="127dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Nome_Vaga"
+                    android:layout_width="237dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:foreground="@drawable/border_black"
+                    android:padding="2dp"
+                    android:text="Nome_Vaga"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:id="@+id/Localizacao_Vaga"
+                    android:layout_width="233dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/transparent"
+                    android:foreground="@drawable/border_black"
+                    android:padding="2dp"
+                    android:text="Localizacao_Vaga"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/Area_Vaga"
+                    android:layout_width="233dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/transparent"
+                    android:foreground="@drawable/border_black"
+                    android:padding="2dp"
+                    android:text="Area_Vaga"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
